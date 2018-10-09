@@ -1,0 +1,7 @@
+{
+    "btnSearchToken":{"xpath":"(//android.support.v4.view.ViewPager//android.view.ViewGroup)[22]"},
+    "txbSearchToken":{"xpath":"//android.widget.EditText"},
+    "btnUpdateTokensList":{"xpath":"//*[@text='Update tokens list']"},
+    "txtTopToken":{"xpath":"//*[contains(@text,'Top token')]"},
+    "btnDone":{"xpath":"//*[@text='Done']"}
+}

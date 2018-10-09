@@ -1,0 +1,14 @@
+{
+    "steps":[
+        {"action":"tap","interface":"Introduction/CreateOrRestoreWallet.json","element":"btnImportWalletByPassphrase","step_definition":"3.1 Click on Import Wallet by Passphrase button"},
+        {"action":"waitForElementExist","interface":"CommonElements.json","element":"btnActivate","step_definition":"3.2 Wait for Import Wallet Passphrase screen"},
+        {"action":"type","interface":"ImportWallet/Passphrase.json","element":"txbPassPhrase","value":"${passPhrase}","step_definition":"3.3 Input passphrase"},
+        {"action":"tap","interface":"CommonElements.json","element":"btnActivate","step_definition":"3.4 Click Activate button"},
+        {"action":"waitForElementExist","interface":"CommonElements.json","element":"txbPassword","step_definition":"3.5 Wait for Setup screen"},
+        {"action":"type","interface":"CommonElements.json","element":"txbWalletName","value":"${walletName}","step_definition":"3.6 Input Wallet name"},
+        {"action":"type","interface":"CommonElements.json","element":"txbPassword","value":"${password}","step_definition":"3.7 Input password"},
+        {"action":"tap","interface":"ImportWallet/Setup.json","element":"btnCreateMyWallet","step_definition":"3.8 Click on Create My Wallet button"},
+        {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","timeOut":300000,"step_definition":"3.9 Wait for screen loading completely"},
+        {"action":"waitForTextExist","text":"BALANCE","step_definition":"3.10 Wait for Dashboard screen"}
+    ]
+}

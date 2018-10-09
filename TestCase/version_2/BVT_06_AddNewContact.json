@@ -1,0 +1,32 @@
+{
+    "Tc":"BVT_06_Verify that user can add new contact with BTC and ETH address",
+    "steps":[
+        {"action":"setVariable","variable":"contact","value":"contact1","step_definition":"1 Set variable for contact's name"},
+        {"action":"setVariable","variable":"btc","value":"1BRrHgkddRY2GC9MkMcP1RrF7QfoVoE4dG","step_definition":"2 Set variable for BTC's address"},
+        {"action":"setVariable","variable":"eth","value":"0x6176c7161e49f118f9911bcdedd935a9fdf05f9b","step_definition":"3 Set variable for ETH's address"},
+        {"action":"setVariable","variable":"passPhrase","value":"make home amazing asthma point tooth tip amateur hover pulse couple actress","step_definition":"2 Set the variable for passphrase"},
+        {"action":"setVariable","variable":"walletName","value":"make","step_definition":"3 Set the variable for wallet name"},
+        {"action":"setVariable","variable":"password","value":"1234@1234","step_definition":"4 Set the variable for password"},
+        {"action":"callGroup","path":"version_2/agreeTermsAndConditions.json","step_definition":"4 Call Group Agree Terms and Condition"},
+        {"action":"callGroup","path":"version_2/importWalletByPassphrase.json","step_definition":"5 Call Group Import Wallet"},
+        {"action":"tap","interface":"CommonElements.json","element":"btnCancel","step_definition":"6 Click on Cancel button"},
+        {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"btnCancel","step_definition":"7 Wait for Cancel button not exist"},
+        {"action":"tap","interface":"Portfolio/DashBoard.json","element":"imgShowMore","step_definition":"6 Click on Show More button"},
+        {"action":"waitForElementExist","interface":"Portfolio/More.json","element":"txtContacts","step_definition":"7 Wait for More screen"},
+        {"action":"tap","interface":"Portfolio/More.json","element":"txtContacts","step_definition":"8 Click on Contacts"},
+        {"action":"waitForElementExist","interface":"Contact/Contacts.json","element":"btnAddContacts","step_definition":"9 Wait for Contact screen"},
+        {"action":"tap","interface":"Contact/Contacts.json","element":"btnAddContacts","step_definition":"10 Click on Add Contact button"},
+        {"action":"waitForElementExist","interface":"Contact/NewContact.json","element":"txbFullName","step_definition":"11 Wait for New Contact screen"},
+        {"action":"type","interface":"Contact/NewContact.json","element":"txbFullName","value":"${contact}","step_definition":"12 Input full name"},
+        {"action":"type","interface":"Contact/NewContact.json","element":"txbBTC","value":"${btc}","step_definition":"13 Input BTC Address"},
+        {"action":"type","interface":"Contact/NewContact.json","element":"txbETH","value":"${eth}","step_definition":"14 Input ETH address"},
+        {"action":"tap","interface":"CommonElements.json","element":"btnDone","step_definition":"15 Click on Add Contact button"},
+        {"action":"waitForElementExist","interface":"Contact/Contacts.json","element":"txtAllContacts","step_definition":"16.1 Wait for Contact screen"},
+        {"action":"waitForElementExist","interface":"Contact/Contacts.json","element":"txtFavourite","step_definition":"16.2 Wait for Contact screen"},
+        {"action":"tapByText","text":"${contact}","step_definition":"17 Click on Add Contact button"},
+        {"action":"waitForElementNotExist","interface":"Contact/Contacts.json","element":"txtAllContacts","step_definition":"18.1 Wait for specific contact screen"},
+        {"action":"waitForElementNotExist","interface":"Contact/Contacts.json","element":"txtFavourite","step_definition":"18.2 Wait for Contact screen"},
+        {"action":"checkElementText","interface":"Contact/Contact.json","element":"txbBTC","text":"${btc}","step_definition":"19 Check BTC coin exist"},
+        {"action":"checkElementText","interface":"Contact/Contact.json","element":"txbETH","text":"${eth}","step_definition":"20 Check ETH coin exist"}
+    ]
+}

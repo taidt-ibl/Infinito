@@ -1,0 +1,16 @@
+{
+    "steps":[
+        {"action":"tap","interface":"Introduction/CreateOrRestoreWallet.json","element":"btnImportWalletByPrivateKeys","step_definition":"5.1 Click on Import Wallet by Private Keys button"},
+        {"action":"waitForElementExist","interface":"CommonElements.json","element":"btnActivate","step_definition":"5.2 Wait for Import Wallet by Private keys screen"},
+        {"action":"type","interface":"ImportWallet/PrivateKeys.json","element":"txbBTC","value":"${btc}","step_definition":"5.3 Input BTC private keys"},
+        {"action":"tap","interface":"CommonElements.json","element":"btnActivate","step_definition":"5.4 Click Restore button"},
+        {"action":"waitForElementExist","interface":"CommonElements.json","element":"txbPassword","step_definition":"5.5 Wait for Setup screen"},
+        {"action":"type","interface":"CommonElements.json","element":"txbWalletName","value":"${walletName}","step_definition":"5.6 Input Wallet name"},
+        {"action":"type","interface":"CommonElements.json","element":"txbPassword","value":"${password}","step_definition":"5.7 Input password"},
+        {"action":"tap","interface":"ImportWallet/Setup.json","element":"btnCreateMyWallet","step_definition":"5.8 Click on Create My Wallet button"},
+        {"action":"waitForElementExist","interface":"CommonElements.json","element":"btnIGotIt","step_definition":"5.9 Wait for I got it button"},
+        {"action":"tap","interface":"CommonElements.json","element":"btnIGotIt","step_definition":"5.10 Click on I got it button"},
+        {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","timeOut":300000,"step_definition":"5.11 Wait for screen loading"},
+        {"action":"waitForTextExist","text":"BALANCE","step_definition":"5.12 Wait for Login successful screen"}
+    ]
+}

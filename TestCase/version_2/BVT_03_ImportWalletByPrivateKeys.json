@@ -1,0 +1,12 @@
+{
+    "Tc":"BVT_03_Verify that user can import wallet by private keys",
+    "steps":
+        [
+            {"action":"callGroup","path":"version_2/agreeTermsAndConditions.json","step_definition":"1 Call Group Agree Terms and Condition"},
+            {"action":"setVariable","variable":"btc","value":"L5CWD9EUpB6uQMYudtAJKSv1f9usnNRvL8NsiavyX1NnVtfHXXTP","step_definition":"2 Set the variable for passphrase"},
+            {"action":"setVariable","variable":"walletName","value":"Test","step_definition":"3 Set the variable for wallet name"},
+            {"action":"setVariable","variable":"password","value":"1234@1234","step_definition":"4 Set the variable for password"},
+            {"action":"callGroup","path":"version_2/importWalletByPrivateKeys.json","step_definition":"5 Call group Import Wallet By Private Key"},
+            {"action":"checkTextExist","text":"BTC","step_definition":"6 Check BTC coin exist"}
+        ]
+}

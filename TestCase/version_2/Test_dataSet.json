@@ -1,0 +1,7 @@
+{
+    "Tc":"BVT_07_Verify that data set works correctly",
+    "steps":[
+    {"action":"callGroup","path":"version_2/agreeTermsAndConditions.json","step_definition":"1 Call Group Agree Terms and Condition"},
+    {"action":"callGroup","path":"version_2/importWalletByPassphrase.json","step_definition":"2 Call Group Import Wallet"}
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "steps":[
+        {"action":"initDevice","device":"D2.40","interface":"Introduction/DefaultLanguage.json","element":"txtEnghlish","timeOut":160000,"step_definition":"1.1 Create the Appium connection"},
+        {"action":"waitForElementExist","interface":"Introduction/DefaultLanguage.json","element":"txtEnghlish","step_definition":"1.2 Wait for English radio button display"},
+        {"action":"tap","interface":"Introduction/DefaultLanguage.json","element":"txtEnghlish","step_definition":"1.3 Click on English radio button"},
+        {"action":"waitForElementExist","interface":"Introduction/DefaultLanguage.json","element": "txtEnglishTitle","step_definition":"1.4 Wait for title exist"},
+        {"action":"tap","interface":"Introduction/DefaultLanguage.json","element":"btnSubmit","step_definition":"1.5 Click on Submit button"},
+        {"action":"waitForElementExist","interface":"Introduction/TermsAndConditions.json","element":"txtEnglishTitle","step_definition":"1.6 Wait for Terms and Conditions title"},
+        {"action":"waitForElementExist","interface":"Introduction/TermsAndConditions.json","element":"rbTermsAndConditions","step_definition":"1.7 Wait for Terms and Conditions radio button"},
+        {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","step_definition":"1.8 Wait for Loading image not exist"},
+        {"action":"waitForElementExist","interface":"Introduction/TermsAndConditions.json","element":"rbGeneralDisclaimer","step_definition":"1.9 Wait for General Disclaimer radio button"},
+        {"action":"tap","interface":"Introduction/TermsAndConditions.json","element":"rbTermsAndConditions","step_definition":"1.10 Click on I agree Terms and Conditions radio button"},
+        {"action":"tap","interface":"Introduction/TermsAndConditions.json","element":"rbGeneralDisclaimer","step_definition":"1.11 Click on I agree General Disclaimer radio button"},
+        {"action":"tap","interface":"CommonElements.json","element":"btnNext","step_definition":"1.12 Click on Next button"},
+        {"action":"waitForElementExist","interface":"Introduction/CreateOrRestoreWallet.json","element":"btnCreateWallet","step_definition":"1.13 Wait for Create/Restore Wallet screen"}
+    ]
+}

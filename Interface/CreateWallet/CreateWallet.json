@@ -1,0 +1,4 @@
+{
+    "rbBackupPassPhrase":{"xpath":"//android.widget.TextView[contains(@text,'I am ready')]"},
+    "btnStartBackup":{"xpath":"//android.widget.TextView[contains(@text,'Start Backup')]"}
+}

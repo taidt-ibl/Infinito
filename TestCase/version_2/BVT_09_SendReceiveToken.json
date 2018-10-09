@@ -1,0 +1,69 @@
+{
+    "Tc":"BVT_09_Verify that user can send/receive GNT token",
+    "steps":[
+    {"action":"callGroup","path":"version_2.34/agreeTermsAndConditions.json","step_definition":"1 Call Group Agree Terms and Condition"},
+    {"action":"callGroup","path":"version_2.34/importWalletByPassphrase.json","step_definition":"2 Call Group Import Wallet"},
+    {"action":"tap","interface":"CommonElements.json","element":"btnCancel","step_definition":"3 Click on Cancel button"},
+    {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"btnCancel","step_definition":"3 Wait for Cancel button not exist"},
+    {"action":"setVariable","variable":"token","value":"XOV","step_definition":"3 Set variable for chosen token"},
+    {"action":"callGroup","path":"version_2.34/addToken.json","step_definition":"4 Call Group Import Wallet"},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {"action":"callGroup","path":"version_2.34/addCoinWithScrollingFirstWallet.json","step_definition":"4 Call Group Add Coin"},
+    {"action":"callGroup","path":"version_2.34/selectAccountName.json","step_definition":"5 Call Group Select Account"},
+    {"action":"getElementText","interface":"Portfolio/CoinToken.json","element":"txtBalance","variable":"walletBalance1","step_definition":"6 Get balance amount 1"},
+    {"action":"tap","interface":"Portfolio/DashBoardScreen.json","element":"imgShowWallet","step_definition":"7 Click on show Wallet button"},
+    {"action":"waitForElementExist","interface":"Introduction/CreateOrRestoreWallet.json","element":"btnImportWalletByPassphrase","step_definition":"8 Wait for Import wallet button"},
+    {"action":"setVariable","variable":"passPhrase","value":"${passPhrase}","step_definition":"9 Set variable for passPhrase"},
+    {"action":"setVariable","variable":"walletName","value":"${walletNameSend}","step_definition":"10 Set variable for wallet name"},
+    {"action":"callGroup","path":"version_2.34/importWalletByPassphrase.json","step_definition":"11 Call Group Import Wallet"},
+    {"action":"callGroup","path":"version_2.34/addCoinWithScrolling.json","step_definition":"12 Call Group Add Coin"},
+
+    {"action":"setVariable","variable":"sendAddress","value":"${accountName}","step_definition":"13 Set variable for send Address"},
+    {"action":"setVariable","variable":"accountName","value":"${accountNameSend}","step_definition":"13 Set variable for account name"},
+    {"action":"callGroup","path":"version_2.34/selectAccountName.json","step_definition":"14 Call Group Select Account"},
+
+
+    {"action":"tap","interface":"Portfolio/CoinToken.json","element":"txtSend","step_definition":"16 Click on Send text"},
+    {"action":"waitForElementExist","interface":"Portfolio/CoinToken.json","element":"txbSendAddress","step_definition":"17 Wait for Send Adress textbox"},
+   
+    {"action":"generateRandomNumber","min":0.0001,"max":0.001,"result":"amount","step_definition":"14 Set variable for amount"},
+
+
+    {"action":"type","interface":"Portfolio/CoinToken.json","element":"txbSendAddress","value":"${sendAddress}","step_definition":"15 Type involve public key"},
+    {"action":"type","interface":"Portfolio/CoinToken.json","element":"txbAmount","value":"${amount}","step_definition":"16 Type the amount"},
+    {"action":"getElementText","interface":"Portfolio/CoinToken.json","element":"txtBalance","variable":"walletBalance2","step_definition":"22 Get balance amount"},
+    
+    {"action":"tap","interface":"CommonElements.json","element":"btnNext","step_definition":"23 Click on Next button"},
+    {"action":"waitForElementExist","interface":"Portfolio/CoinToken.json","element":"btnSend","step_definition":"24 Wait for Send button"},
+    {"action":"scrollToElement","interface":"Portfolio/CoinToken.json","element":"txbPasswordSelector","step_definition":"25 Scroll to view the Passphrase 12"},
+    {"action":"type","interface":"Portfolio/CoinToken.json","element":"txbPassword","value":"${password}","step_definition":"26 Type the password"},
+    {"action":"tap","interface":"Portfolio/CoinToken.json","element":"btnSend","step_definition":"27 Click on Send button"},
+
+    {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","timeOut":180000,"step_definition":"28 Wait for screen loading"},
+    {"action":"waitForElementNotExist","interface":"Portfolio/CoinToken.json","element":"btnSend","step_definition":"29 Wait for Send button not exist"},
+    {"action":"sleep", "timeOut":180000, "step_definition":"30 Sleep to work around for socket issue"},
+    {"action":"tap","interface":"Portfolio/DashBoardScreen.json","element":"imgShowWallet","step_definition":"30 Click on show Wallet button"},
+    {"action":"waitForElementExist","interface":"Introduction/CreateOrRestoreWallet.jsjon","element":"btnImportWalletByPassphrase","step_definition":"31 Wait for Import wallet button"},
+    {"action":"setVariable","variable":"walletName","value":"involve","step_definition":"32 Set variable for wallet name"},
+    {"action":"tapByText","text":"${walletName}","step_definition":"33 Click on involve wallet"}
+
+    ]
+}

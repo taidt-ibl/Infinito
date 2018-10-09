@@ -1,0 +1,10 @@
+{
+    "btnAddCoin_2":{"xpath":"(//android.widget.ImageView)[7]"},
+    "btnAddCoin":{"xpath":"(//android.widget.ImageView)[8]"},
+    "txtBalance":{"xpath":"(//*)[6]"},
+    "imgShowWallet":{"xpath":"(//android.widget.ImageView)[2]"},
+    "imgWarning":{"xpath":"//android.widget.TextView/following-sibling::android.widget.ImageView"},
+    "btnJoinAirdropNow":{"xpath":"//*[@text='JOIN AIRDROP NOW']"},
+    "imgShowMore":{"xpath":"(//android.widget.ImageView)[10]"},
+    "btnCreateImportWallet":{"xpath":"//*[@text='Create/Import Wallet']"}
+}

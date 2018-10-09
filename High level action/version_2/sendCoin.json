@@ -1,0 +1,25 @@
+{
+    "steps":[
+        {"action":"tapByText","text":"${coin}","step_definition":"9 Click on ETH coin"},
+        {"action":"waitForElementExist","interface":"Portfolio/CoinToken.json","element":"txtActivity","step_definition":"10 Wait for Activity text"},
+        {"action":"waitForElementNotExist","interface":"Portfolio/CoinToken.json","element":"txtNoActivity","step_definition":"10 Wait for No Activity text not exist"},
+        {"action":"tap","interface":"Portfolio/CoinToken.json","element":"txtSend","step_definition":"13 Click on Send text"},
+        {"action":"waitForElementExist","interface":"Portfolio/CoinToken.json","element":"txbSendAddress","step_definition":"12 Wait for Send Adress textbox"},
+        {"action":"getElementText","interface":"Portfolio/CoinToken.json","element":"txtTransactionFee","variable":"firstFee","step_definition":"13 Get the first fee"},
+        
+        {"action":"type","interface":"Portfolio/CoinToken.json","element":"txbSendAddress","value":"${sendAddress}","step_definition":"15 Type involve public key"},
+        {"action":"type","interface":"Portfolio/CoinToken.json","element":"txbAmount","value":"${amount}","step_definition":"16 Type the amount"},
+        {"action":"waitForElementExist","interface":"Portfolio/CoinToken.json","element":"txtTransactionFee","step_definition":"20 Wait for Total fee text"},
+        {"action":"waitForElementAttributeNotExist","interface":"Portfolio/CoinToken.json","element":"txtTransactionFee","attribute":"text","value":"${firstFee}","step_definition":"21 Wait for Total fee text change"},
+        {"action":"getTransactionFee","type":"${coin}","variable":"transactionFee","step_definition":"21 Get transaction fee"},
+        
+        {"action":"getElementText","interface":"Portfolio/CoinToken.json","element":"txtBalance","variable":"walletBalance2","step_definition":"22 Get balance amount"},
+        {"action":"tap","interface":"CommonElements.json","element":"btnNext","step_definition":"23 Click on Next button"},
+        {"action":"waitForElementExist","interface":"Portfolio/CoinToken.json","element":"btnSend","step_definition":"24 Wait for Send button"},
+        {"action":"scrollToElement","interface":"Portfolio/CoinToken.json","element":"txbPasswordSelector","step_definition":"25 Scroll to view the Passphrase 12"},
+        {"action":"type","interface":"Portfolio/CoinToken.json","element":"txbPassword","value":"${password}","step_definition":"26 Type the password"},
+        {"action":"tap","interface":"Portfolio/CoinToken.json","element":"btnSend","step_definition":"27 Click on Send button"},
+        {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","timeOut":180000,"step_definition":"28 Wait for screen loading"},
+        {"action":"waitForElementNotExist","interface":"Portfolio/CoinToken.json","element":"btnSend","step_definition":"29 Wait for Send button not exist"}
+        ]
+}

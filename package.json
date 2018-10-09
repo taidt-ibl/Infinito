@@ -1,0 +1,22 @@
+{
+  "name": "ibl-core-appium-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "1.0.1": "^1.0.0",
+    "exceljs": "^1.6.2",
+    "serial-mocha": "0.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "data-driven": "^1.4.0",
+    "mocha": "^5.2.0",
+    "mocha-junit-reporter": "^1.18.0"
+  },
+  "description": ""
+}

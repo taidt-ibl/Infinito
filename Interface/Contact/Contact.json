@@ -1,0 +1,4 @@
+{
+    "txbBTC":{"xpath":"(//android.widget.EditText)[1]"},
+    "txbETH":{"xpath":"(//android.widget.EditText)[2]"}
+}

@@ -1,0 +1,3 @@
+{
+    "txtWalletName":{"xpath":"//android.widget.TextView[@text='Wallet name']"}
+}

@@ -1,0 +1,15 @@
+{
+    "Tc":"BVT_02_Verify that user can import wallet by passphrase",
+    "steps":
+        [
+            {"action":"callGroup","path":"version_2/agreeTermsAndConditions.json","step_definition":"1 Call Group Agree Terms and Condition"},
+            {"action":"setVariable","variable":"passPhrase","value":"make home amazing asthma point tooth tip amateur hover pulse couple actress","step_definition":"2 Set the variable for passphrase"},
+            {"action":"setVariable","variable":"walletName","value":"make","step_definition":"3 Set the variable for wallet name"},
+            {"action":"setVariable","variable":"password","value":"1234@1234","step_definition":"4 Set the variable for password"},
+            {"action":"callGroup","path":"version_2/importWalletByPassphrase.json","step_definition":"5 Call Group Import Wallet By Passphrase"},
+            {"action":"checkTextExist","text":"BTC","step_definition":"6 Check BTC coin exist"},
+            {"action":"checkTextExist","text":"ETH","step_definition":"7 Check ETH coin exist"},
+            {"action":"checkTextExist","text":"NEO","step_definition":"8 Check NEO coin exist"},  
+            {"action":"checkTextExist","text":"GAS","step_definition":"9 Check GAS coin exist"}
+        ]
+}

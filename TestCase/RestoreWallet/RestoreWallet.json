@@ -1,0 +1,16 @@
+{
+    "Tc":"Infinito_RestoreWallet",
+    "steps":[
+    {"action":"callGroup","path":"agreeTermsAndConditions.json","step_definition":"1 Call Group Register Precondition"},
+    {"action":"tap","interface":"Introduction/CreateOrRestoreWallet.json","element":"btnImportWallet","step_definition":"2 Click on Import Wallet button"},
+    {"action":"waitForElementExist","interface":"ImportWallet/Passphrase.json","element":"txbPassPhrase","step_definition":"3 Wait for Import Wallet screen"},
+    {"action":"type","interface":"ImportWallet/Passphrase.json","element":"txbPassPhrase","value":"make home amazing asthma point tooth tip amateur hover pulse couple actress","step_definition":"4 Input question 1"},
+    {"action":"tap","interface":"CommonElements.json","element":"btnActivate","step_definition":"5 Click Import Wallet button"},
+    {"action":"waitForElementExist","interface":"CommonElements.json","element":"txbWalletName","step_definition":"6 Wait for Setup screen"},
+    {"action":"type","interface":"CommonElements.json","element":"txbWalletName","value":"Test","step_definition":"7 Input Wallet name"},
+    {"action":"type","interface":"CommonElements.json","element":"txbPassword","value":"123@123","step_definition":"8 Input password"},
+    {"action":"tap","interface":"CommonElements.json","element":"btnActivate","step_definition":"9 Click Create Wallet"},
+    {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","timeOut":"180000","step_definition":"10 Wait for screen loading"},
+    {"action":"waitForElementExist","interface":"DashBoardScreen.json","element":"btnAddCoin","step_definition":"11 Wait for Login successful screen"}
+    ]
+}

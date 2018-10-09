@@ -1,0 +1,9 @@
+{
+    "txbInput1":{"xpath":"(//android.widget.EditText)[1]"},
+    "txbInput2":{"xpath":"(//android.widget.EditText)[2]"},
+    "txbInput3":{"xpath":"(//android.widget.EditText)[3]"},
+    "txtInputQuestion1":{"xpath":"(//android.widget.TextView)[8]"},
+    "txtInputQuestion2":{"xpath":"(//android.widget.TextView)[10]"},
+    "txtInputQuestion3":{"xpath":"(//android.widget.TextView)[12]"},
+    "btnCompleteVerification":{"xpath":"//android.widget.TextView[@text='Complete Verification']"}
+}

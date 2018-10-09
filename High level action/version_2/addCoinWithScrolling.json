@@ -1,0 +1,19 @@
+{
+    "steps":[
+    {"action":"tap","interface":"Portfolio/DashBoard.json","element":"btnAddCoin_2","step_definition":"9.1 Click on Add Coin button"},
+    {"action":"waitForElementExist","interface":"Portfolio/AddCoin.json","element":"btnUpdateCoinsList","step_definition":"9.2 Wait for Update coins list button"},
+    {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","step_definition":"9.3 Wait for screen loading completely"},    
+    {"action":"getElementLocation","interface":"Portfolio/AddCoin.json","element":"txtBTC","x":"x","y":"y","step_definition":"9.4 Get BTC location"},    
+    {"action":"moveElement","interface":"Portfolio/AddCoin.json","element":"txtBCH","step_definition":"9.5 Scroll to view the Passphrase 12","x":"${x}","y": "${y}"},
+    {"action":"tapByText","text":"${coin}","step_definition":"9.6 Click on Coin"},
+    {"action":"tap","interface":"Portfolio/AddCoin.json","element":"btnUpdateCoinsList","step_definition":"9.7 Click on Update coins list button"},
+    {"action":"waitForElementExist","interface":"CommonElements.json","element":"btnActive","step_definition":"9.8 Wait for Active button"},
+    {"action":"type","interface":"Portfolio/CoinToken.json","element":"txbPassword","value":"${password}","step_definition":"9.9 Input password"},
+    {"action":"tap","interface":"CommonElements.json","element":"btnActive","step_definition":"9.10 Click on Active button"},
+    {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"btnActive","step_definition":"9.11 Wait for Active button not exist"},        
+    {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","step_definition":"9.12 Wait for screen loading completely"},      
+    {"action":"tap","interface":"CommonElements.json","element":"imgBackToDashBoard","step_definition":"9.13 Click on button Back to Dashboard"},
+    {"action":"waitForTextExist","text":"BALANCE","step_definition":"9.14 Wait for Dashboard screen"},
+    {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","step_definition":"9.15 Wait for screen loading completely"}
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "txbFullName":{"xpath":"(//android.widget.EditText)[1]"},
+    "txbBTC":{"xpath":"(//android.widget.EditText)[2]"},
+    "txbETH":{"xpath":"(//android.widget.EditText)[3]"}
+}

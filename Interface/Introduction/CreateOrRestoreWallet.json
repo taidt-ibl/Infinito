@@ -1,0 +1,7 @@
+{
+    "title":{"xpath":"(//android.widget.TextView)[1]"},
+    "btnCreateWallet":{"xpath":"//android.widget.TextView[@text = 'Create New Wallet' or @text = 'Create Wallet']"},
+    "btnImportWallet":{"xpath":"//android.widget.TextView[@text ='Restore your wallet']"},
+    "btnImportWalletByPassphrase":{"xpath":"//android.widget.TextView[@text ='Import by Passphrase' or @text = 'Import wallet']"},
+    "btnImportWalletByPrivateKeys":{"xpath":"//android.widget.TextView[@text ='Import by Private Keys']"}
+}

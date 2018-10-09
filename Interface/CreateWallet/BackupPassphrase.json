@@ -1,0 +1,16 @@
+{
+    "btnWritePassPhrase":{"xpath":"//android.widget.TextView[contains(@text,'ve written it down')]"},
+    "txtPhrase1":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[1]"},
+    "txtPhrase7":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[2]"},
+    "txtPhrase2":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[3]"},
+    "txtPhrase8":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[4]"},
+    "txtPhrase3":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[5]"},
+    "txtPhrase9":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[6]"},
+    "txtPhrase4":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[7]"},
+    "txtPhrase10":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[8]"},
+    "txtPhrase5":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[9]"},
+    "txtPhrase11":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[10]"},
+    "txtPhrase6":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[11]"},
+    "txtPhrase12":{"xpath":"(//android.widget.ScrollView//android.view.ViewGroup/following-sibling::android.widget.TextView)[12]"},
+    "txtPhrase12Selector":{"uiSelector":"new UiSelector().className(\"android.widget.TextView\").instance(29)"}
+}

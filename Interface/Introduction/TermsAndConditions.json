@@ -1,0 +1,6 @@
+{
+    "txtEnglishTitle":{"xpath":"//android.widget.TextView[@text='Terms and Conditions']"},
+    "rbTermsAndConditions":{"xpath":"(//android.widget.TextView)[6]"},
+    "rbGeneralDisclaimer":{"xpath":"(//android.widget.TextView)[7]"},
+    "btnNext":{"xpath":"//android.widget.TextView[@text='Next'"}
+}

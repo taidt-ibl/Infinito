@@ -1,0 +1,4 @@
+{
+    "txbPassword":{"xpath":"(//android.widget.EditText)[1]"},
+    "btnCreateMyWallet":{"xpath":"//android.widget.TextView[@text='Create My Wallet']"}
+}

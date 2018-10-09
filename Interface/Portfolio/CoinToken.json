@@ -1,0 +1,17 @@
+{
+    "txtNoActivity":{"xpath":"//android.widget.TextView[@text='No activity']"},
+    "txtActivity":{"xpath":"//android.widget.TextView[@text='Activity']"},
+    "txtSend":{"xpath":"//android.widget.TextView[@text='Send']"},
+    "txtReceive":{"xpath":"//android.widget.TextView[@text='Receive']"},
+    "txbSendAddress":{"xpath":"(//android.widget.EditText)[1]"},
+    "txbAmount":{"xpath":"(//android.widget.EditText)[2]"},
+    "txtTransactionFee":{"xpath":"//android.widget.TextView[@text='Total']/following-sibling::android.widget.TextView"},
+    "txbPasswordSelector":{"uiSelector":"new UiSelector().className(\"android.widget.EditText\").instance(0)"},
+    "txbPassword":{"xpath":"(//android.widget.EditText)[1]"},
+    "btnTransactionSpeed":{"xpath":"//android.widget.TextView[@text='Transaction Speed']"},
+    "txtFee":{"xpath":"//android.widget.TextView[@text='Fee']"},
+    "txtGasPrice":{"xpath":"//android.widget.TextView[@text='Gas Price']"},
+    "btnSend":{"xpath":"(//android.widget.TextView[@text='Send'])[2]"},
+    "txtBalance":{"xpath":"(//android.widget.TextView)[4]"},
+    "imgExpand":{"xpath":"(//android.widget.ImageView)[6]"}
+}

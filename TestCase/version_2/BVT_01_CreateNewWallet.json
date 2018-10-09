@@ -1,0 +1,14 @@
+﻿{
+    "Tc":"BVT_01_Verify that user can create a new wallet",
+    "steps":
+        [
+            {"action":"callGroup","path":"version_2/agreeTermsAndConditions.json","step_definition":"1 Call group Agree Terms and conditions"},
+            {"action":"setVariable","variable":"walletName","value":"Test","step_definition":"2 Set the variable for wallet name"},
+            {"action":"setVariable","variable":"password","value":"1234@1234","step_definition":"3 Set the variable for password"},
+            {"action":"callGroup","path":"version_2/createWallet.json","step_definition":"4 Call group Create Wallet"},
+            {"action":"checkTextExist","text":"BTC","step_definition":"5 Check BTC coin exist"},
+            {"action":"checkTextExist","text":"ETH","step_definition":"6 Check ETH coin exist"},
+            {"action":"checkTextExist","text":"NEO","step_definition":"7 Check NEO coin exist"},  
+            {"action":"checkTextExist","text":"GAS","step_definition":"8 Check GAS coin exist"}  
+        ]
+}

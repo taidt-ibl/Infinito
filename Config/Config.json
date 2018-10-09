@@ -1,0 +1,5 @@
+{
+    "D2.40":{"id":"D2.40","port":"4723","hostName":"0.0.0.0","deviceName":"Sony","platformVersion":"7.1.1","platformName":"Android","name":"Sample Test","app":"InfinitoWallet_v2.0.0_b42_Mainnet_Production.apk"},
+    "timeOut":{"pollFreq":1000,"defaultTime":15000,"shortTime":30000,"mediumTime":60000,"longTime":120000,"testCaseTime":1200000},
+    "app":{"package":"io.infinito.wallet"}
+}

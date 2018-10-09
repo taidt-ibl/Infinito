@@ -1,0 +1,3 @@
+{
+    "btnCreateWallet":{"xpath":"//android.widget.TextView[@text='Create My Wallet']"}
+}

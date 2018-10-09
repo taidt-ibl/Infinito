@@ -1,0 +1,6 @@
+{
+    "tabTokens":{"xpath":"//*[translate(@text,'TOKENS','tokens') ='tokens']"},
+    "btnUpdateCoinsList":{"xpath":"//*[@text='Update coins list']"},
+    "txtBTC":{"xpath":"//*[@text='BTC']"},
+    "txtBCH":{"xpath":"//*[@text='BCH']"}
+}

@@ -1,0 +1,3 @@
+{
+    "txtContacts":{"xpath":"//android.widget.TextView[contains(@text,'Contacts')]"}
+}

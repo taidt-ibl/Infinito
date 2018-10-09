@@ -1,0 +1,21 @@
+{
+    "imgLoading":{"xpath":"//android.widget.ProgressBar"},
+    "btnActivate":{"xpath":"//android.widget.TextView[@text='Activate']"},
+    "btnActive":{"xpath":"//android.widget.TextView[@text='Active']"},
+    "txbWalletName":{"xpath":"(//android.widget.EditText)[1]"},
+    "txbPassword":{"xpath":"(//android.widget.EditText)[2]"},
+    "btnNext":{"xpath":"//android.widget.TextView[@text='Next']"},
+    "btnRestore":{"xpath":"//android.widget.TextView[@text='Restore']"},
+    "btnFinish":{"xpath":"//android.widget.TextView[@text='Finish']"},
+    "btnOk":{"xpath":"//android.widget.TextView[@text='OK']"},
+    "btnConfirm":{"xpath":"//android.widget.TextView[@text='Confirm']"},
+    "btnCancel":{"xpath":"//*[@text='Cancel']"},
+    "btnDone":{"xpath":"//android.widget.TextView[@text='Done']"},
+    "btnAgree":{"xpath":"//android.widget.TextView[@text='Agree']"},
+    "btnAdd":{"xpath":"//android.widget.TextView[@text='Add']"},
+    "btnPlus":{"xpath":"(//android.widget.ImageView)[8]"},
+    "btnPlus1.14":{"xpath":"(//android.widget.ImageView)[10]"},
+    "btnJoinAirdropNow":{"xpath":"//android.widget.TextView[@text='JOIN AIRDROP NOW']"},
+    "btnIGotIt":{"xpath":"//android.widget.TextView[@text='I got it']"},
+    "imgBackToDashBoard":{"xpath":"//*[@text='']"}
+}

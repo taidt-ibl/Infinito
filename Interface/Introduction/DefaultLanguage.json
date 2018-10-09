@@ -1,0 +1,12 @@
+{
+    "title":{"xpath":"(//android.widget.TextView)[1]"},
+    "txtEnglishTitle":{"xpath":"//android.widget.TextView[@text='Choose Display Language' or @text='Default Language']"},
+    "btnSubmit":{"xpath":"//android.widget.TextView[@text='Select' or @text='Submit']"},
+    "txtEnghlish":{"xpath":"(//android.widget.TextView)[2]"},
+    "txtEnghlish1":{"asdsad":"(//android.widget.TextView)[2]","asdasd":"(//android.widget.TextView)[2]"},
+    "txtJapanese":{"xpath":"(//android.widget.TextView)[3]"},
+    "txtChinese":{"xpath":"(//android.widget.TextView)[4]"},
+    "txtKorian":{"xpath":"(//android.widget.TextView)[5]"},
+    "abc":{"asd":"sadasd","asdas":"dsfsdfsdfdsfsdfdsf"},
+    "txtVietnamese":{"xpath":"(//android.widget.TextView)[6]"}
+}

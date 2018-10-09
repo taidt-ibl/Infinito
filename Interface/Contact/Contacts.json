@@ -1,0 +1,5 @@
+{
+    "btnAddContacts":{"xpath":"//android.widget.TextView[contains(@text,'Add your first contact')]"},
+    "txtAllContacts":{"xpath":"//android.widget.TextView[contains(@text,'All Contacts')]"},
+    "txtFavourite":{"xpath":"//android.widget.TextView[contains(@text,'Favourite')]"}
+}
