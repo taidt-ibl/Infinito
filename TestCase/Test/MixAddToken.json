@@ -5,5 +5,7 @@
     {"action":"closeApp","step_definition":"close application version 1.11"},
     {"action":"callGroup","path":"version_1.14/AddToken.json","step_definition":"2 Call Group Add Token version 1.14"},
     {"action":"removeApp","step_definition":"remove app"}
+
+    
     ]
 }
